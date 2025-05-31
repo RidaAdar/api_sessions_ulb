@@ -10,7 +10,7 @@ app = FastAPI()
 fake = Faker('fr_FR')
 
 # Charger les étudiants
-etudiants = pd.read_csv("etudiants.csv")
+etudiants = pd.read_csv("data/etudiants.csv")
 salles = [f"S{str(i).zfill(3)}" for i in range(1, 21)]
 
 sessions = []
