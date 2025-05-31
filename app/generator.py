@@ -7,7 +7,7 @@ import asyncio
 from app.models import Session
 
 fake = Faker('fr_FR')
-etudiants = pd.read_csv("data/etudiants.csv")
+etudiants = pd.read_csv("app/data/etudiants.csv")
 
 salles = [f"S{str(i).zfill(3)}" for i in range(1, 21)]
 
